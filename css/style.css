@@ -1,0 +1,397 @@
+/*geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*variaveis*/
+:root {
+    --color-main: #5d34cc;
+}
+
+/*container_navegacao*/
+#container_navegacao {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    background-color: var(--color-main);
+    color: #e0dbdb;
+
+}
+
+#container_navegacao_icon p {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#container_navegacao_icon i,
+.span_purple,
+#container_navegacao_text i {
+    color: #ac4add;
+}
+
+#container_navegacao_text p {
+    margin-top: 10px;
+}
+
+/*container_cabecalho*/
+#container_cabecalho {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 5px;
+    background: url("../imagens/fundoPrincipal-pets.png");
+}
+
+#container_cabecalho__text_title {
+    font-weight: bolder;
+}
+
+#container_cabecalho__text p {
+    margin-top: 20px;
+}
+
+#container_cabecalho__img img {
+    width: 400px;
+}
+
+/*section_cadastro_pets*/
+#section_cadastro_pets {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+
+}
+
+.cadastrarPet_item {
+    width: 50%;
+    border: 1px solid #817d7d7e;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+
+
+.cadastrarPet_item h2 i {
+    background-color: var(--color-main);
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 6px;
+    color: #fff;
+}
+
+.cadastrarPet_item h2 {
+    font-weight: bolder;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+#cadastrarPet_item__form label {
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+#cadastrarPet_item__form input {
+    border-radius: 10px;
+}
+
+#cadastrarPet_item__tipoAnimal {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#cadastrarPet_item__tipoAnimalContainer p {
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.box_tipoAnimal img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.box_tipoAnimal {
+    text-align: center;
+    border: 1px solid #5c5757;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.25s ease;
+    background-color: #fff;
+}
+
+.box_tipoAnimal:hover {
+    transform: scale(1.1);
+    background-color: #bcb1db;
+    cursor: pointer;
+    border: 1px solid #5d34cc;
+}
+
+#btn_cadastrarPet {
+    width: 200px;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: var(--color-main);
+    color: #fff;
+    font-weight: bolder;
+    transition: all 0.25s ease;
+    width: 50%;
+
+}
+
+#btn_cadastrarPet:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    color: #000;
+}
+
+/*container_ferramentasPet*/
+#container_ferramentasPet p {
+    margin-top: 20px;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+
+
+#container_ferramentasPet__tipo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.boxFerramentas_pet {
+    text-align: center;
+    border: 1px solid #5c5757;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.25s ease;
+    background-color: #fff;
+}
+
+.boxFerramentas_pet .boxFerramentas_pet_title {
+    font-weight: bolder;
+}
+
+.boxFerramentas_pet {
+    width: 250px;
+    transition: all 0.25s ease;
+}
+
+.boxFerramentas_pet:hover {
+    transform: scale(1.1);
+    background-color: #bcb1db;
+    cursor: pointer;
+    border: 1px solid #5d34cc;
+}
+
+
+.boxFerramentas_pet img {
+    width: 100px;
+}
+
+.boxFerramentas_pet_preco {
+    font-size: 20px;
+}
+
+/*container_petSelecionado*/
+#container_petSelecionado {
+    margin-top: 30px;
+}
+
+.box_petSelecionadoNome {
+    text-align: center;
+    background-color: #c08eda;
+    padding-top: 5px;
+    padding-bottom: 1px;
+    border-radius: 10px;
+
+}
+
+.box_petSelecionadoNome i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+/* container_resumoServico */
+#container_resumoServico {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    border: 1px solid #5c5757;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+
+}
+
+#container_resumoServico__icon i {
+    font-size: 40px;
+    background-color: var(--color-main);
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 7px;
+    color: #fff;
+}
+
+.span_bold,
+#container_resumoServico__dados_pet__subtitle {
+    font-weight: bolder;
+}
+
+#container_resumoServico__dados_pet__subtitle {
+    margin-top: 5px;
+}
+
+#container_resumoServico__valorTotal {
+    font-weight: bolder;
+}
+
+.valorTotal {
+    font-size: 50px;
+}
+
+#btn_confirmarServico {
+    margin-top: 20px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bolder;
+    transition: all 0.25s ease;
+    background-color: var(--color-main);
+    color: #fff;
+    width: 100%;
+}
+
+#btn_confirmarServico i {
+    margin-right: 5px;
+}
+
+#btn_confirmarServico:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    color: #000;
+}
+
+
+
+
+/*media queries*/
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    /*container_navegacao*/
+    #container_navegacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    /*container_cabecalho*/
+    #container_cabecalho__img img {
+        display: none;
+    }
+
+    #container_cabecalho__text_title {
+        font-size: 30px;
+    }
+
+    #container_cabecalho__text p {
+        margin-top: 20px;
+    }
+
+    /*section_cadastro_pets*/
+    #section_cadastro_pets {
+        flex-direction: column;
+
+    }
+
+    .cadastrarPet_item {
+        width: 100%;
+    }
+
+    #cadastrarPet_item__tipoAnimal {
+        gap: 10px;
+    }
+
+    /*servicoPet*/
+    #servicoPet h2,
+    #cadastroPet h2 {
+        font-size: 20px;
+    }
+
+    /* container_resumoServico */
+    #container_resumoServico {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    /*container_navegacao*/
+    #container_navegacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*container_cabecalho*/
+    #container_cabecalho__img img {
+        display: none;
+    }
+
+    #container_cabecalho__text_title {
+        font-size: 30px;
+    }
+
+    #container_cabecalho__text p {
+        margin-top: 20px;
+    }
+
+    /*section_cadastro_pets*/
+    #section_cadastro_pets {
+        flex-direction: column;
+
+    }
+
+    .cadastrarPet_item {
+        width: 100%;
+    }
+
+    #cadastrarPet_item__tipoAnimal {
+        gap: 10px;
+    }
+
+    /*servicoPet*/
+    #servicoPet h2,
+    #cadastroPet h2 {
+        font-size: 20px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    /*container_cabecalho*/
+    #container_cabecalho__text {
+        margin-left: 10px;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}

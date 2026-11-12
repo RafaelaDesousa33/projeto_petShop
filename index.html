@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--font awesome 5-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!--boostrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="imagens/heart.png" type="image/x-icon">
+
+
+</head>
+
+<body style="background-color: #e9e0ee;">
+
+    <nav>
+        <div id="container_navegacao">
+
+            <div id="container_navegacao_icon">
+                <p><i class="fas fa-paw"></i> PetShop <span class="span_purple">Manager</span></p>
+            </div><!--fim container_navegacao_icon-->
+
+            <div id="container_navegacao_text">
+                <p><i class="fas fa-paw"></i> Cuidado e amor em cada detalhe! <i class="fas fa-heart"></i></p>
+            </div><!--fim container_navegacao_text-->
+
+        </div><!--fim container_navegacao-->
+    </nav>
+
+
+    <header>
+        <div id="container_cabecalho">
+
+            <div id="container_cabecalho__text">
+                <h1 id="container_cabecalho__text_title">Seu pet sempre <span class="span_purple">bem cuidado!</span>
+                </h1>
+                <p>Cadastre, escolha o serviço e veja o valor na hora.</p>
+            </div><!--fim container_cabecalho__text-->
+
+            <div id="container_cabecalho__img">
+                <img src="imagens/imagemPrincipal-pets.png" alt="imagem gato e cachorro">
+            </div><!--fim container_cabecalho__img-->
+
+        </div><!--fim container_cabecalho-->
+    </header>
+
+
+
+    <main>
+
+        <div id="cadastroPet_container" class="container">
+
+            <section id="section_cadastro_pets">
+
+                <article class="cadastrarPet_item" id="cadastroPet">
+                    <h2> <i class="fas fa-paw"></i> Cadastrar Pet</h2>
+
+                    <div id="cadastrarPet_item__form">
+                        <form>
+                            <label class="form-label" for="nomePet">Nome do Pet</label>
+                            <input name="nomePet" id="nomePet" placeholder="Digite o nome do pet" class="form-control">
+                        </form>
+
+                    </div><!--fim cadastrarPet_item__form-->
+
+
+                    <div id="cadastrarPet_item__tipoAnimalContainer">
+
+                        <p>Tipo Animal</p>
+
+                        <div id="cadastrarPet_item__tipoAnimal">
+
+                            <div class="box_tipoAnimal" tipoAnimal="cachorro">
+                                <img src="imagens/cachorro.png" alt="imagem cachorro">
+                                <p class="box_tipoAnimal__name">Cachorro</p>
+                            </div><!--fim box_tipoAnimal-->
+
+                            <div class="box_tipoAnimal" tipoAnimal="gato">
+                                <img src="imagens/gato.png" alt="imagem gato">
+                                <p class="box_tipoAnimal__name">Gato</p>
+                            </div><!--fim box_tipoAnimal-->
+
+                        </div><!--fim cadastrarPet_item__tipoAnimal-->
+
+                        <div class="text-center">
+                            <button id="btn_cadastrarPet"><i class="fas fa-plus"></i> Cadastrar
+                                pet</button>
+                        </div>
+
+
+                    </div><!--fim cadastrarPet_item__tipoAnimalContainer-->
+
+
+                </article><!--fim cadastrarPet_item-->
+
+                <article class="cadastrarPet_item" id="servicoPet">
+
+                    <h2> <i class="fas fa-tools"></i> Selecionar serviço</h2>
+
+                    <div id="container_ferramentasPet">
+                        <p>Serviço Desejado</p>
+
+                        <div id="container_ferramentasPet__tipo">
+
+                            <div class="boxFerramentas_pet" tipoFerramenta="banho">
+
+                                <img src="imagens/banheira.png" alt="imagem banheira">
+
+                                <p class="boxFerramentas_pet_title">Banho</p>
+                                <data value="60.00" class="boxFerramentas_pet_preco fw-bold"
+                                    id="boxFerramentas_pet_preco_banho"> R$ 60,00</data>
+
+                            </div><!--fim boxFerramentas_pet-->
+
+
+                            <div class="boxFerramentas_pet" tipoFerramenta="tosa">
+
+                                <img src="imagens/tesoura.png" alt="imagem tesoura">
+
+                                <p class="boxFerramentas_pet_title">Tosa</p>
+                                <data value="50.00" class="boxFerramentas_pet_preco fw-bold"
+                                    id="boxFerramentas_pet_preco_tosa"> R$ 50,00</data>
+
+                            </div><!--fim boxFerramentas_pet-->
+
+                        </div><!--fim container_ferramentasPet__tipo-->
+
+
+                        <div id="container_petSelecionado">
+
+                            <p>Pet Selecionado</p>
+
+                            <div class="box_petSelecionadoNome">
+                                <p id="nome_pet_paragrafo"> <i class="fas fa-paw"></i> Buddy</p>
+                                <p id="tipo_pet_paragrafo">Cachorro</p>
+                            </div><!--fim container_petSelecionadoImg-->
+
+                        </div><!---fim container_petSelecionado-->
+
+                    </div><!--fim container_ferramentasPet-->
+
+                </article><!--fim cadastrarPet_item-->
+
+            </section><!--fim section_cadastro_pets-->
+
+        </div><!--fim cadastroPet_container-->
+
+
+        <div id="container_resumoServico" class="container">
+            <div id="container_resumoServico__icon">
+                <i class="fas fa-calculator"></i>
+            </div><!--fim container_resumoServico__icon-->
+
+            <div id="container_resumoServico__dados_pet">
+
+                <h5 id="container_resumoServico__dados_pet__subtitle">Resumo do Serviço</h5>
+
+                <p> <span class="span_bold span_nomePet">Pet:</span> <span class="span_tipoAnimal"></span>
+                </p>
+
+                <p><span class="span_bold span_tipoServiçoPet">Serviço:</span></p>
+
+            </div><!--fim container_resumoServico__dados_pet-->
+
+            <div id="container_resumoServico__valorTotal">
+                <h5 id="container_resumoServico__valorTotal__subtitle">Valor Total</h5>
+                <data value="500" class="valorTotal">R$ 0</data>
+            </div><!--fim container_resumoServico__valorTotal-->
+
+
+            <div id="container_resumoServico__confirmarServico" class="text-center">
+                <button id="btn_confirmarServico"> <i class="fas fa-check"></i>Confirmar Serviço</button>
+            </div><!--fim container_resumoServico__confirmarServico-->
+
+        </div><!--fim resumoServico-->
+
+
+    </main>
+
+
+
+
+
+
+
+    <!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
