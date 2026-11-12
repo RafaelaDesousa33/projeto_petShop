@@ -6,6 +6,8 @@ O PetShop Manager é um projeto desenvolvido com o objetivo de praticar meus con
 
 A aplicação permite cadastrar pets, selecionar o tipo de animal, escolher serviços de banho e tosa e visualizar o valor total do atendimento.
 
+<img src="imagem_projetoPetshopCompleto.jpg" alt="imagem projeto">
+
 **Funcionalidades**
 
 Cadastro de pets.
